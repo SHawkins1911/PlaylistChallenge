@@ -13,7 +13,7 @@ public class MusicTest {
         Integer startingIndex = 1;
         String selection = "cecelia";
         Integer expected = 2;
-        Integer actual = music.selection(startingIndex, selection);
+        Integer actual = music.selection(playlist, startingIndex, selection);
         Assert.assertEquals(expected, actual);
     }
 
@@ -25,7 +25,7 @@ public class MusicTest {
         Integer startingIndex = 0;
         String selection = "liveoak";
         Integer expected = 1;
-        Integer actual = music.selection(startingIndex, selection);
+        Integer actual = music.selection(playlist, startingIndex, selection);
         Assert.assertEquals(expected, actual);
     }
 }
